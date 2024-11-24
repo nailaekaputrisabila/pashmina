@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8C2C2"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#C29D9D"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:contentDescription="Back Button" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="PASHMINA BILA"
+                android:textColor="#000000"
+                android:background="#C29D9D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
+                android:contentDescription="Cart Button" />
+        </LinearLayout>
+
+        <!-- Image and Details -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="135dp"
+            android:layout_height="167dp"
+            android:layout_marginLeft="295px"
+            android:layout_marginTop="43px"
+            android:contentDescription="Product Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Informasi Pembeli > Metode Pengiriman > Metode Pembayaran"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Produk"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/productQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/productColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warna:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp" />
+
+        <!-- Shipping Options -->
+
+        <RadioGroup
+            android:id="@+id/metodePengirimanGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/JNE"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#000000"
+                android:drawableStart="@drawable/img_12"
+                android:drawablePadding="8dp"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/SHOPEEXPRES"
+                android:layout_width="307dp"
+                android:layout_height="76dp"
+                android:buttonTint="#000000"
+                android:drawableStart="@drawable/img_13"
+                android:drawablePadding="8dp"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/J_AND_T"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#000000"
+                android:drawableStart="@drawable/img_14"
+                android:drawablePadding="8dp"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <!-- Subtotal -->
+        <TextView
+            android:id="@+id/subtotalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtotal: Rp 0"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/kembaliButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Kembali"
+                android:backgroundTint="#D39898"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/lanjutkanButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lanjutkan"
+                android:backgroundTint="#C29D9D"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
